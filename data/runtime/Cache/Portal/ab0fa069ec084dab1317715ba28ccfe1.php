@@ -162,23 +162,29 @@
                                     <!-- End Profile info -->
                                     <!-- Profile Description -->
                                     <div id="profile_desc">
+                                        
                                         <p>
-                                            作品列表：
+                                            作品列表&nbsp;(●'◡'●)
                                         </p>
                                         <p>
-                                        	Lorem ipsum dolor sit amet, consectetur 
-                                            adipiscing elit. Nullam ac risus nibh. 
-                                            Donec adipiscing luctus tur
+                                        	<i class="glyphicon glyphicon-globe"></i>&nbsp;&nbsp;<a href="http://www.lechezai.com/" target="_blank" style="color: #839CCF;">乐车仔汽车购物商城</a>
                                         </p>
                                         <p>
-                                        	Lorem ipsum dolor sit amet, consectetur adipiscing eli
+                                            <i class="glyphicon glyphicon-globe"></i>&nbsp;&nbsp;<a href="http://library.hualixy.com/" target="_blank" style="color: #839CCF;">华立学院图书馆</a>
                                         </p>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing eli
+                                            <i class="glyphicon glyphicon-globe"></i>&nbsp;&nbsp;<a href="http://www.buyteer.com/leling/" target="_blank" style="color: #839CCF;">老年人大学网站</a>
                                         </p>
                                         <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing eli
+                                            <i class="glyphicon glyphicon-globe"></i>&nbsp;&nbsp;<a href="http://www.buyteer.com/walle/" target="_blank" style="color: #839CCF;">个人账单小系统</a>
                                         </p>
+                                        <p>
+                                            <i class="glyphicon glyphicon-globe"></i>&nbsp;&nbsp;<a href="http://www.buyteer.com/immigration/" target="_blank" style="color: #839CCF;">美国移民网站</a>
+                                        </p>
+                                    </div>
+                                    <div id="profile_social">
+                                        <h6>生活，也是一种享受！</h6>
+                                        <div class="clear"></div>
                                     </div>
                                     <!-- End Profile Description -->
                                     <!-- Name -->
@@ -281,14 +287,21 @@
                         <span class="value"><a href="http://www.yangdongshenge.cn/resume/" target="_blank">www.yangdongshenge.cn/resume/</a></span>
                         <div class="clear"></div>
                     </li>
+                    <li>
+                        <i class="glyphicon glyphicon-globe"></i>
+                        <label>github</label>
+                        <span class="value"><a href="https://github.com/elinxer/" target="_blank">https://github.com/elinxer/</a></span>
+                        <div class="clear"></div>
+                    </li>
                 </ul>
                 <p style="margin-bottom:20px">
                     <i class="fa fa-quote-left"></i>       
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis.
+                    &nbsp;&nbsp;生活,也是一种享受！活着为的不仅仅是开心，我活着更多是为了了解社会的群体生活和结构，试图去解析这其中的缘由。
+                    当我们在生活艰难之时，我们为了生存下去，当能充分发挥自身潜能去创造美好生活，然而当我们身处美好生活中的时候，我们如何生存下去？
+                    当世界都是美好，那新的美好来自何处？
                 </p>
-                 <p style="margin-bottom:20px">
-                    <i class="fa fa-quote-left"></i>       
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam nec nulla sagittis, scelerisque mi vitae, congue turpis. 
+                <p style="float: right;">
+                    ————&nbsp;&nbsp;elinx&nbsp;&nbsp;
                 </p>
             </div>
             <!-- End left-wrap -->
@@ -409,61 +422,61 @@
         <div class="col-md-6">
             <!-- .title_content -->
             <div class="title_content" style="float: none;">
-                <div class="text_content">Designs skills</div>
+                <div class="text_content">Web开发技能</div>
                 <div class="clear"></div>
             </div>
             <!-- /.title_content -->
             <div class="skills">
                 <!-- .skillbar -->
-                <div class="skillbar clearfix" data-percent="95%">
-                    <div class="skillbar-title"><span>Photoshop</span></div>
+                <div class="skillbar clearfix" data-percent="70%">
+                    <div class="skillbar-title"><span>PHP</span></div>
                     <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">95%</div>
+                    <div class="skill-bar-percent">70%</div>
                 </div>
                 <!-- /.skillbar -->
                 
                 <!-- .skillbar -->
-                <div class="skillbar clearfix" data-percent="90%">
-                    <div class="skillbar-title"><span>Illustrateur</span></div>
+                <div class="skillbar clearfix" data-percent="50%">
+                    <div class="skillbar-title"><span>Javascript</span></div>
                     <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">90%</div>
+                    <div class="skill-bar-percent">50%</div>
                 </div>
                 <!-- /.skillbar -->
                 
                 <!-- .skillbar -->
                 <div class="skillbar clearfix" data-percent="65%">
-                    <div class="skillbar-title"><span>Indesign</span></div>
+                    <div class="skillbar-title"><span>Mysql</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent">65%</div>
                 </div>
                 <!-- /.skillbar -->
                 
                 <!-- .skillbar -->
-                <div class="skillbar clearfix" data-percent="35%">
-                    <div class="skillbar-title"><span>Flash</span></div>
+                <div class="skillbar clearfix" data-percent="65%">
+                    <div class="skillbar-title"><span>Linux</span></div>
                     <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">35%</div>
+                    <div class="skill-bar-percent">65%</div>
                 </div>
                 <!-- /.skillbar -->
             </div>
             <!-- .title_content -->
             <div class="title_content" style="float: none;">
-                <div class="text_content">Programming Skills</div>
+                <div class="text_content">阶段技能</div>
                 <div class="clear"></div>
             </div>
             <!-- /.title_content -->
             <div class="skills">
                 <!-- .skillbar -->
-                <div class="skillbar clearfix" data-percent="85%">
-                    <div class="skillbar-title"><span>Wordpress</span></div>
+                <div class="skillbar clearfix" data-percent="75%">
+                    <div class="skillbar-title"><span>git/svn版本控制</span></div>
                     <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">85%</div>
+                    <div class="skill-bar-percent">75%</div>
                 </div>
                 <!-- /.skillbar -->
                 
                 <!-- .skillbar -->
                 <div class="skillbar clearfix" data-percent="75%">
-                    <div class="skillbar-title"><span>Joomla</span></div>
+                    <div class="skillbar-title"><span>ThinkPHP</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent">75%</div>
                 </div>
@@ -471,24 +484,24 @@
                 
                 <!-- .skillbar -->
                 <div class="skillbar clearfix" data-percent="60%">
-                    <div class="skillbar-title"><span>Drupal</span></div>
+                    <div class="skillbar-title"><span>API开发</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent">60%</div>
                 </div>
                 <!-- /.skillbar -->
                 
                  <!-- .skillbar -->
-                <div class="skillbar clearfix" data-percent="89%">
-                    <div class="skillbar-title"><span>Php</span></div>
+                <div class="skillbar clearfix" data-percent="55%">
+                    <div class="skillbar-title"><span>Java</span></div>
                     <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">89%</div>
+                    <div class="skill-bar-percent">55%</div>
                 </div>
                 <!-- /.skillbar --> 
             </div>
             
             <!-- .title_content -->
             <div class="title_content" style="float: none;">
-                <div class="text_content">Office Skills</div>
+                <div class="text_content">辅助技能</div>
                 <div class="clear"></div>
             </div>
             <!-- /.title_content -->
@@ -527,38 +540,38 @@
     		</div>
             <!-- .title_content -->
             <div class="title_content" style="float: none;">
-                <div class="text_content">Hobbies Skills</div>
+                <div class="text_content">生活爱好</div>
                 <div class="clear"></div>
             </div>
             <!-- /.title_content -->
             <div class="skills">
                 <!-- .skillbar -->
-                <div class="skillbar clearfix" data-percent="60%">
-                    <div class="skillbar-title"><span>Music</span></div>
+                <div class="skillbar clearfix" data-percent="99%">
+                    <div class="skillbar-title"><span>喝茶</span></div>
                     <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">60%</div>
+                    <div class="skill-bar-percent">99%</div>
                 </div>
                 <!-- /.skillbar -->
                 
                 <!-- .skillbar -->
-                <div class="skillbar clearfix " data-percent="95%">
-                    <div class="skillbar-title"><span>Sport</span></div>
+                <div class="skillbar clearfix " data-percent="65%">
+                    <div class="skillbar-title"><span>闲余运动</span></div>
                     <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">95%</div>
+                    <div class="skill-bar-percent">65%</div>
                 </div>
                 <!-- /.skillbar -->
                 
                 <!-- .skillbar -->
-                <div class="skillbar clearfix " data-percent="85%">
-                    <div class="skillbar-title"><span>Reading</span></div>
+                <div class="skillbar clearfix " data-percent="75%">
+                    <div class="skillbar-title"><span>文字阅读</span></div>
                     <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">85%</div>
+                    <div class="skill-bar-percent">75%</div>
                 </div>
                 <!-- /.skillbar -->
                 
                 <!-- .skillbar -->
                 <div class="skillbar clearfix " data-percent="70%">
-                    <div class="skillbar-title"><span>Travelling</span></div>
+                    <div class="skillbar-title"><span>自由旅行</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent">70%</div>
                 </div>
@@ -567,52 +580,52 @@
             
             <!-- .title_content -->
             <div class="title_content" style="float: none;">
-                <div class="text_content">Language Skills</div>
+                <div class="text_content">语言能力</div>
                 <div class="clear"></div>
             </div>
             <!-- /.title_content -->
             <div class="skills">
                 <!-- .skillbar -->
-                <div class="skillbar clearfix" data-percent="90%">
+                <div class="skillbar clearfix" data-percent="60%">
                     <div class="skillbar-title"><span>English</span></div>
                     <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">90%</div>
+                    <div class="skill-bar-percent">60%</div>
                 </div>
                 <!-- /.skillbar -->
                 
                 <!-- .skillbar -->
                 <div class="skillbar clearfix " data-percent="80%">
-                    <div class="skillbar-title"><span>French</span></div>
+                    <div class="skillbar-title"><span>普通话</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent">80%</div>
                 </div>
                 <!-- /.skillbar -->
                 
                 <!-- .skillbar -->
-                <div class="skillbar clearfix " data-percent="50%">
+                <!-- <div class="skillbar clearfix " data-percent="50%">
                     <div class="skillbar-title"><span>Spanish</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent">50%</div>
-                </div>
+                </div> -->
                 <!-- /.skillbar -->
                 
                 <!-- .skillbar -->
-                <div class="skillbar clearfix " data-percent="60%">
+                <!-- <div class="skillbar clearfix " data-percent="60%">
                     <div class="skillbar-title"><span>Swiss</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent">60%</div>
-                </div>
+                </div> -->
                 <!-- /.skillbar -->
             </div>
             <!-- .title_content -->
             <div class="title_content" style="float: none;">
-                <div class="text_content">My Resume</div>
+                <div class="text_content">我的简历</div>
                 <div class="clear"></div>
             </div>
             <!-- /.title_content -->
             <!-- .download_resume -->
             <a class="download" style="margin:0;float: left;" href="#">
-                <span data-hover="Download My Resume"><i class="glyphicon glyphicon-download-alt"></i> Download My Resume</span>
+                <span data-hover=" 下载简历"><i class="glyphicon glyphicon-download-alt"></i> 下载简历</span>
             </a>
             <!-- /.download_resume -->
         </div>
@@ -621,21 +634,21 @@
         <div class="col-md-6 resume-left">    
             <!-- .title_content -->
             <div class="title_content" style="margin-bottom:5px">
-                <div class="text_content">Experience</div>
+                <div class="text_content">工作经历</div>
                 <div class="clear"></div>
             </div>
             <!-- /.title_content -->
             <!-- .attributes -->
             <ul class="attributes">
                 <li class="first">
-                    <h5>Web Developer <span class="duration"><i class="fa fa-calendar color"></i> 2011 - 2013</span></h5>
-                    <h6><span class="fa fa-briefcase"></span> Name of Company</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
+                    <h5>PHP 开发者 <span class="duration"><i class="fa fa-calendar color"></i> 2015 - 2016</span></h5>
+                    <h6><span class="fa fa-briefcase"></span>&nbsp;&nbsp;连奖网络科技有限公司</h6>
+                    <p>负责开发公司自主品牌商城商品管理模块功能。负责接口API架设以及商品分类、商品管理、商品属性、商品详情、购物车等模块功能开发，整理API接口并形成接口文档。</p>
                 </li>
                 <li>
-                    <h5>Front-End Developer <span class="duration"><i class="fa fa-calendar color"></i> 2010 - 2011</span></h5>
-                    <h6><span class="fa fa-briefcase"></span> Name of Company</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
+                    <h5>企业型网站开发负责人 <span class="duration"><i class="fa fa-calendar color"></i> 2013 - 2014</span></h5>
+                    <h6><span class="fa fa-briefcase"></span>&nbsp;&nbsp;华立学院信息中心</h6>
+                    <p>负责企业网站整理编档，进行逻辑分析，项目立项，建库建档并进行相关站点开发。后期负责与客户交流，整理改善客户需求，并进行上线测试直至交付。</p>
                 </li>
 
             </ul>
@@ -643,7 +656,7 @@
             <br>
             <!-- .title_content -->
             <div class="title_content">
-                <div class="text_content">Education</div>
+                <div class="text_content">教育</div>
                 <div class="clear"></div>
             </div>
             <!-- /.title_content -->
@@ -651,38 +664,56 @@
             <!-- .attributes -->
             <ul class="attributes">
                 <li class="first">
-                    <h5>Master of Engineering <span class="duration"><i class="fa fa-calendar color"></i> 2011 - 2013</span></h5>
-                    <h6><span class="fa fa-book"></span> Name of University</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
+                    <h5>工程学士 <span class="duration"><i class="fa fa-calendar color"></i> 2013 - 2017</span></h5>
+                    <h6><span class="fa fa-book"></span> 广东工业大学华立学院</h6>
+                    <p>在校期间学习基础编程语言知识，从C语言开始逐步深入学习了数据结构、算法、离散数学、汇编基础、Java基础、Jsp网页建设等 <!-- <a href="http://www.hualixy.com" target="_blank">华立官网</a> --></p>
                 </li>
-                <li>
+                <!-- <li>
                     <h5>Bachelor of Engineering <span class="duration"><i class="fa fa-calendar color"></i> 2010 - 2011</span></h5>
                     <h6><span class="fa fa-book"></span> Name of University</h6>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
-                </li>
+                </li> -->
             </ul>
             <!-- /.attributes -->
             <br>
             <!-- .title_content -->
             <div class="title_content">
-                <div class="text_content">Awards</div>
+                <div class="text_content">项目作品</div>
                 <div class="clear"></div>
             </div>
             <!-- /.title_content -->
-            
             <!-- .attributes -->
             <ul class="attributes">
                 <li class="first">
-                    <h5>Graphic &amp; Art Direction <span class="duration"><i class="fa fa-calendar color"></i> 2013 - 2014</span></h5>
-                    <h6><span class="fa fa-trophy"></span> Name of Institute</h6>
+                    <h5>乐车仔汽车购物商城<span class="duration"><i class="fa fa-calendar color"></i> 2015 - 2016</span></h5>
+                    <h6><span class="fa fa-trophy"></span> 广州市连奖网络科技有限公司</h6>
                     <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
                 </li>
                 <li>
-                    <h5>Design &amp; Art Direction <span class="duration"><i class="fa fa-calendar color"></i> 2012 - 2013</span></h5>
-                    <h6><span class="fa fa-trophy"></span> Name of Institute</h6>
+                    <h5>华立学院图书馆<span class="duration"><i class="fa fa-calendar color"></i> 2014 - 2015</span></h5>
+                    <h6><span class="fa fa-trophy"></span>华立学院图书馆</h6>
                     <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
                 </li>
-      
+                <li>
+                    <h5>美国移民网站<span class="duration"><i class="fa fa-calendar color"></i> 2014 - 2015</span></h5>
+                    <h6><span class="fa fa-trophy"></span>华立学院信息中心</h6>
+                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
+                </li>
+                <li>
+                    <h5>老年人大学网站<span class="duration"><i class="fa fa-calendar color"></i> 2014 - 2015</span></h5>
+                    <h6><span class="fa fa-trophy"></span>华立学院信息中心</h6>
+                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
+                </li>
+                <li>
+                    <h5>元通轮胎公司官网<span class="duration"><i class="fa fa-calendar color"></i> 2014 - 2015</span></h5>
+                    <h6><span class="fa fa-trophy"></span>walle</h6>
+                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
+                </li>
+                <li>
+                    <h5>个人账单小系统<span class="duration"><i class="fa fa-calendar color"></i> 2014 - 2015</span></h5>
+                    <h6><span class="fa fa-trophy"></span>walle</h6>
+                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
+                </li>
             </ul>
             <!-- /.attributes -->
             <br>  
@@ -726,14 +757,14 @@
                                 <!-- .portfolio -->
                                 <div id="portfolio" class="content_2">
     <!-- .title -->
-    <h1 class="h-bloc">Portfolio - My Works</h1>
+    <h1 class="h-bloc">Portfolio - 这是小二的茶水了</h1>
     <!-- .container-portfolio -->
     <div class="container-portfolio">
         <!-- #filters -->
         <ul id="filters" class="clearfix">
-            <li><span class="filter active" data-filter="catWeb catGraphic catMotion logo">All</span></li>
-            <li><span class="filter" data-filter="catWeb">Web Design</span></li>
-            <li><span class="filter" data-filter="catGraphic">Graphic Design</span></li>
+            <li><span class="filter active" data-filter="catWeb catGraphic catMotion logo">所有</span></li>
+            <li><span class="filter" data-filter="catWeb">作品截图</span></li>
+            <li><span class="filter" data-filter="catGraphic">私密照</span></li>
             <li><span class="filter" data-filter="catMotion">Motion Graphic</span></li>
             <li><span class="filter" data-filter="logo">Logo</span></li>
         </ul>
@@ -1909,7 +1940,7 @@
                                 <!-- End .blog -->
                                 <!-- .contact -->
                                 <div id="contact" class="content_2">
-    <h1 class="h-bloc">Contact - Contact Me</h1>
+    <h1 class="h-bloc">Contact - 小升的联系方式</h1>
     <div class="row">
         <div class="col-lg-12">
             <div id="map"></div>
@@ -1920,24 +1951,24 @@
                     <div class="contact-info">
                         <!--<h3 class="main-heading"><span>Contact info</span></h3>-->
                         <div class="title_content" style="float: none;">
-                            <div class="text_content">Contact info</div>
+                            <div class="text_content">小升的联系方式</div>
                             <div class="clear"></div>
                         </div>
                         <ul>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-map-marker"></i> Adress:</span> San Francisco , CA.<br /><br /></li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-envelope"></i> Email:</span> brown.smith@gmail.com</li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-phone"></i> Phone:</span> +123 456 789 111</li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-globe"></i> Website:</span> www.brown-smith.com</li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-comment"></i> Skype:</span> brown-smith-skype</li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-thumbs-up"></i> G. Drive:</span> brown-s-gm@gmail.com</li>
-                            <li><span class="span-info"><i class="glyphicon glyphicon-unchecked"></i> Skydrive:</span> brown-s-sk@hotmail.com</li>
+                            <li><span class="span-info"><i class="glyphicon glyphicon-map-marker"></i> 地址:&nbsp;</span> 广州增城<br /><br /></li>
+                            <li><span class="span-info"><i class="glyphicon glyphicon-envelope"></i> Email:&nbsp;</span> 654753115@qq.com</li>
+                            <li><span class="span-info"><i class="glyphicon glyphicon-phone"></i> Phone:&nbsp;</span> +86 13650962253</li>
+                            <li><span class="span-info"><i class="glyphicon glyphicon-globe"></i> Website:&nbsp;</span> <a href="http://www.buyteer.com/resume/" target="_blank">www.buyteer.com/resume/</a></li>
+                            <li><span class="span-info"><i class="glyphicon glyphicon-comment"></i> QQ:&nbsp;</span> 654753115</li>
+                            <li><span class="span-info"><i class="glyphicon glyphicon-thumbs-up"></i> 微信:&nbsp;</span> walle654753115</li>
+                            <!-- <li><span class="span-info"><i class="glyphicon glyphicon-unchecked"></i> Skydrive: </span> brown-s-sk@hotmail.com</li> -->
                         </ul>
                     </div>
                     <!-- /Contact Info -->
                     <div class="clear"></div>
                     <!--<h3 class="main-heading" style="margin-left: 22px;"><span>Follow me</span></h3>-->
                     <div class="title_content tiltle_contacts" style="float: none;">
-                        <div class="text_content">Follow me</div>
+                        <div class="text_content">这里也可以找我</div>
                         <div class="clear"></div>
                     </div>
                     <div id="profile_social">
@@ -1952,7 +1983,7 @@
                 <div class="col-md-7">
                     <!-- Contact Form -->
                     <div class="title_content" style="float: none;">
-                        <div class="text_content">Let's keep in touch</div>
+                        <div class="text_content">好基友，一辈子~</div>
                         <div class="clear"></div>
                     </div>
                     <div class="contact-form">
@@ -1960,21 +1991,21 @@
                         <div id="contact-status"></div>
                         <form action="#" id="contactform">
                             <p class="form-group" id="contact-name">
-                                <label for="name">Your Name</label>
-                                <input type="text" name="name" class="form-control name-contact" id="inputSuccess" placeholder="Name..." />
+                                <label for="name">你叫啥</label>
+                                <input type="text" name="name" class="form-control name-contact" id="inputSuccess" />
                             </p>
                             <p class="form-group" id="contact-email"> 
-                                <label for="email">Your Email</label>
-                                <input type="text" name="email" class="form-control email-contact" id="inputSuccess" placeholder="Email..." />
+                                <label for="email">小姐留个email吧</label>
+                                <input type="text" name="email" class="form-control email-contact" id="inputSuccess" />
                             </p>
                             <p class="form-group" id="contact-message">
-                                <label for="message">Your Message</label>
+                                <label for="message">有什么大事小事说下呗</label>
                                 <textarea name="message" cols="88" rows="6" class="form-control message-contact" id="inputError" placeholder="Message..."></textarea>
                             </p>
-                            <input type="reset" name="reset" value="CLEAR" class="reset">
+                            <input type="reset" name="reset" value="删掉" class="reset">
                             <!-- <input type="submit" name="submit" value="SEND MESSAGE" class="submit">-->
                             <section class="button-demo" style="display: inline-block;">
-                                <button class="ladda-button submit send_email" name="submit" data-color="green" data-style="expand-left">SEND MESSAGE</button>
+                                <button class="ladda-button submit send_email" name="submit" data-color="green" data-style="expand-left">&nbsp;&nbsp;飞鸽传书&nbsp;&nbsp;</button>
                             </section>
                         </form>
                     </div>
