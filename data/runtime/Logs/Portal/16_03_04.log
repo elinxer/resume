@@ -1,0 +1,8 @@
+[ 2016-03-04T00:50:39+08:00 ] ::1 /resume/index.php/portal/index/resume/index.php/portal/index/send_email
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000784s ]
+INFO: Run Behavior\CheckLangBehavior [ RunTime:0.001208s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002844s ]
+SQL: SHOW COLUMNS FROM `re_options` [ RunTime:0.0464s ]
+SQL: SELECT * FROM `re_options` WHERE ( option_name='site_options' ) LIMIT 1   [ RunTime:0.0007s ]
+

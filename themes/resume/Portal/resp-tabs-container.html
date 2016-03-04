@@ -59,7 +59,7 @@
                     <i class="fa fa-quote-left"></i>       
                     &nbsp;&nbsp;生活,也是一种享受！活着为的不仅仅是开心，我活着更多是为了了解社会的群体生活和结构，试图去解析这其中的缘由。
                     当我们在生活艰难之时，我们为了生存下去，当能充分发挥自身潜能去创造美好生活，然而当我们身处美好生活中的时候，我们如何生存下去？
-                    当世界都是美好，那新的美好来自何处？
+                    当世界都是美好，那么新的美好来自何处？
                 </p>
                 <p style="float: right;">
                     ————&nbsp;&nbsp;elinx&nbsp;&nbsp;
@@ -68,116 +68,22 @@
             <!-- End left-wrap -->
             <div class="col-md-6 profile-r">
                 <div class="cycle-slideshow">
-                    <img src="__TMPL__Portal/images/img-profile/about_1.jpg" alt="" />
-                    <img src="__TMPL__Portal/images/img-profile/about_2.png" alt="" />
+                    <?php $pro_slide = sp_getslide('pro_slide'); ?>
+                    <volist name="pro_slide" id="pro_slide_vo">
+                        <img src="{$pro_slide_vo['slide_pic']}" alt="{$pro_slide_vo['slide_name']}" style="width: 350px;height: 460px;" />
+                    </volist>
                     <img src="__TMPL__Portal/images/img-profile/about_3.png" alt="" />
                 </div>
             </div>
         </div>
-        <div class="clear"></div>
-        <!-- <div class="row" id="services">
-    		<div class="col-md-12">
-                <div class="title_content">
-                    <div class="text_content">My Services 1</div>
-                    <div class="clear"></div>
-                </div>
-                <div class="col-md-4 pack-service">
-                    <div class="service">
-                        <div class="service-icon"><i class="fa fa-tag"></i></div>
-                        <div class="service-detail">
-                            <h6>Making Money</h6>
-                            <p>Fusce quis interdum ipsum.Suspendi suscipit vehicula sapienid mattis. Lorem ipsum amet consectetur.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 pack-service">
-                    <div class="service">
-                        <div class="service-icon"><i class="fa fa-cogs"></i></div>
-                        <div class="service-detail">
-                            <h6>Easy to Customize</h6>
-                            <p>Fusce quis interdum ipsum.Suspendi suscipit vehicula sapienid mattis. Lorem ipsum amet consectetur.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4 pack-service">
-                    <div class="service">
-                        <div class="service-icon"><i class="fa fa-arrows-alt"></i></div>
-                        <div class="service-detail">
-                            <h6>Moving Let Us Help</h6>
-                            <p>Fusce quis interdum ipsum.Suspendi suscipit vehicula sapienid mattis. Lorem ipsum amet consectetur.</p>
-                        </div>
-                    </div>
-                </div>
-            </div> 
-        </div> -->
         <!-- End Services -->
-        <div class="clear"></div>
-        <!-- <div class="border-list"></div>
-
-        <div class="row">
-            <div class="col-md-12">
-                <div class="bottom-p">
-                    <div class="title_content">
-                        <div class="text_content">My Services 2</div>
-                        <div class="clear"></div>
-                    </div>
-                    <div class="panel-group" id="accordion">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" class="collapse_tabs">
-                                        Making Money
-                                        <i class="glyphicon glyphicon-chevron-up" style="float: right;font-size: 13px;"></i>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseOne" class="panel-collapse collapse in">
-                                <div class="panel-body">
-                                    <i class="fa fa-quote-left"></i>  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" class="collapse_tabs">
-                                        Easy to Customize
-                                        <i class="glyphicon glyphicon-chevron-down" style="float: right;font-size: 13px;"></i>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseTwo" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <i class="fa fa-quote-left"></i>  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h4 class="panel-title">
-                                    <a data-toggle="collapse" data-parent="#accordion" href="#collapseThree" class="collapse_tabs">
-                                        Moving Let Us Help
-                                        <i class="glyphicon glyphicon-chevron-down" style="float: right;font-size: 13px;"></i>
-                                    </a>
-                                </h4>
-                            </div>
-                            <div id="collapseThree" class="panel-collapse collapse">
-                                <div class="panel-body">
-                                    <i class="fa fa-quote-left"></i>  Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
         <div class="clear"></div>
     </div>
     <!-- End .profile -->
     <!-- .resume -->
     <div id="resume" class="content_2">
     <!-- .title -->
-    <h1 class="h-bloc">Resume - Personal Info</h1> 
+    <h1 class="h-bloc">Resume - 我的简历</h1> 
     <div class="row">
        <!-- .resume-right -->
         <div class="col-md-6">
@@ -219,6 +125,13 @@
                     <div class="skill-bar-percent">65%</div>
                 </div>
                 <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix" data-percent="65%">
+                    <div class="skillbar-title"><span>CSS</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">65%</div>
+                </div>
+                <!-- /.skillbar -->
             </div>
             <!-- .title_content -->
             <div class="title_content" style="float: none;">
@@ -251,13 +164,34 @@
                 </div>
                 <!-- /.skillbar -->
                 
-                 <!-- .skillbar -->
+                <!-- .skillbar -->
                 <div class="skillbar clearfix" data-percent="55%">
                     <div class="skillbar-title"><span>Java</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent">55%</div>
                 </div>
-                <!-- /.skillbar --> 
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix" data-percent="65%">
+                    <div class="skillbar-title"><span>微信平台开发</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">65%</div>
+                </div>
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix" data-percent="75%">
+                    <div class="skillbar-title"><span>SNS快捷登陆</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">75%</div>
+                </div>
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix" data-percent="75%">
+                    <div class="skillbar-title"><span>平台支付功能</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">75%</div>
+                </div>
+                <!-- /.skillbar -->
             </div>
             
             <!-- .title_content -->
@@ -268,7 +202,7 @@
             <!-- /.title_content -->
             <div class="skills">       
                 <!-- .skillbar -->
-                <div class="skillbar clearfix" data-percent="85%">
+                <div class="skillbar clearfix" data-percent="70%">
                     <div class="skillbar-title"><span>MS Excel</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent">85%</div>
@@ -276,7 +210,7 @@
                 <!-- /.skillbar -->
                 
                 <!-- .skillbar -->
-                <div class="skillbar clearfix " data-percent="95%">
+                <div class="skillbar clearfix " data-percent="75%">
                     <div class="skillbar-title"><span>MS Word</span></div>
                     <div class="skillbar-bar"></div>
                     <div class="skill-bar-percent">95%</div>
@@ -361,33 +295,115 @@
                     <div class="skill-bar-percent">80%</div>
                 </div>
                 <!-- /.skillbar -->
-                
-                <!-- .skillbar -->
-                <!-- <div class="skillbar clearfix " data-percent="50%">
-                    <div class="skillbar-title"><span>Spanish</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">50%</div>
-                </div> -->
-                <!-- /.skillbar -->
-                
-                <!-- .skillbar -->
-                <!-- <div class="skillbar clearfix " data-percent="60%">
-                    <div class="skillbar-title"><span>Swiss</span></div>
-                    <div class="skillbar-bar"></div>
-                    <div class="skill-bar-percent">60%</div>
-                </div> -->
-                <!-- /.skillbar -->
             </div>
             <!-- .title_content -->
             <div class="title_content" style="float: none;">
-                <div class="text_content">我的简历</div>
+                <div class="text_content">人生修炼</div>
                 <div class="clear"></div>
             </div>
             <!-- /.title_content -->
+            <div class="skills">
+                <!-- .skillbar -->
+                <div class="skillbar clearfix" data-percent="98%">
+                    <div class="skillbar-title"><span>忍耐力</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">98%</div>
+                </div>
+                <!-- /.skillbar -->
+                
+                <!-- .skillbar -->
+                <div class="skillbar clearfix " data-percent="99%">
+                    <div class="skillbar-title"><span>审美能力</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">99%</div>
+                </div>
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix " data-percent="66%">
+                    <div class="skillbar-title"><span>记账能力</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">66%</div>
+                </div>
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix " data-percent="44%">
+                    <div class="skillbar-title"><span>视力</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">44%</div>
+                </div>
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix " data-percent="77%">
+                    <div class="skillbar-title"><span>脑力</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">77%</div>
+                </div>
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix " data-percent="88%">
+                    <div class="skillbar-title"><span>熬夜能力</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">88%</div>
+                </div>
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix " data-percent="80%">
+                    <div class="skillbar-title"><span>适应力</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">80%</div>
+                </div>
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix " data-percent="55%">
+                    <div class="skillbar-title"><span>吃饭能力</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">55%</div>
+                </div>
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix " data-percent="60%">
+                    <div class="skillbar-title"><span>打蓝球能力</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">60%</div>
+                </div>
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix " data-percent="1%">
+                    <div class="skillbar-title"><span>泡妞能力</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">1%</div>
+                </div>
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix " data-percent="55%">
+                    <div class="skillbar-title"><span>喝酒能力</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">55%</div>
+                </div>
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix " data-percent="77%">
+                    <div class="skillbar-title"><span>作文能力</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">77%</div>
+                </div>
+                <!-- /.skillbar -->
+                <!-- .skillbar -->
+                <div class="skillbar clearfix " data-percent="88%">
+                    <div class="skillbar-title"><span>探索能力</span></div>
+                    <div class="skillbar-bar"></div>
+                    <div class="skill-bar-percent">88%</div>
+                </div>
+                <!-- /.skillbar -->
+            </div>
             <!-- .download_resume -->
+            <!-- <div class="title_content" style="float: none;">
+                <div class="text_content">我的简历</div>
+                <div class="clear"></div>
+            </div>
             <a class="download" style="margin:0;float: left;" href="#">
                 <span data-hover=" 下载简历"><i class="glyphicon glyphicon-download-alt"></i> 下载简历</span>
-            </a>
+            </a> -->
             <!-- /.download_resume -->
         </div>
         <!-- /.resume-right -->
@@ -429,11 +445,6 @@
                     <h6><span class="fa fa-book"></span> 广东工业大学华立学院</h6>
                     <p>在校期间学习基础编程语言知识，从C语言开始逐步深入学习了数据结构、算法、离散数学、汇编基础、Java基础、Jsp网页建设等 <!-- <a href="http://www.hualixy.com" target="_blank">华立官网</a> --></p>
                 </li>
-                <!-- <li>
-                    <h5>Bachelor of Engineering <span class="duration"><i class="fa fa-calendar color"></i> 2010 - 2011</span></h5>
-                    <h6><span class="fa fa-book"></span> Name of University</h6>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscingVivamus sit amet ligula non lectus cursus egestas. Cras erat lorem, fringilla quis sagittis in, sagittis inNam leo tortor Nam leo tortor Vivamus.</p>
-                </li> -->
             </ul>
             <!-- /.attributes -->
             <br>
@@ -448,32 +459,35 @@
                 <li class="first">
                     <h5>乐车仔汽车购物商城<span class="duration"><i class="fa fa-calendar color"></i> 2015 - 2016</span></h5>
                     <h6><span class="fa fa-trophy"></span> 广州市连奖网络科技有限公司</h6>
-                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
+                    <p>商城为汽车后市场产品销售网上商城，小人负责开发公司自主品牌商城商品管理模块功能。负责接口API架设以及商品分类、商品管理、商品属性、商品详情、购物车等模块功能开发，整理API接口并形成接口文档。</p>
                 </li>
                 <li>
                     <h5>华立学院图书馆<span class="duration"><i class="fa fa-calendar color"></i> 2014 - 2015</span></h5>
                     <h6><span class="fa fa-trophy"></span>华立学院图书馆</h6>
-                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
+                    <p>华立学院图书馆御用网站，现已服役。</p>
+                    <p>从接手开始，经历了N次大小规模的修改、成型然后再修改、成型直至现`金`版本。小的单干，一人开发了整个站点，包括后台搭建，服务器架设，还有兼职做了版面搭配设计，美工找了几个免费打手的帮忙修正。</p>
                 </li>
                 <li>
                     <h5>美国移民网站<span class="duration"><i class="fa fa-calendar color"></i> 2014 - 2015</span></h5>
                     <h6><span class="fa fa-trophy"></span>华立学院信息中心</h6>
-                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
+                    <p>有钱了？活腻了？那就换个地方生活吧！遂意这是个移民官方网站，说来有趣，这个是华立公司旗下的一个新投资项目，然，移民成本高到底了。</p>
                 </li>
                 <li>
                     <h5>老年人大学网站<span class="duration"><i class="fa fa-calendar color"></i> 2014 - 2015</span></h5>
                     <h6><span class="fa fa-trophy"></span>华立学院信息中心</h6>
-                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
+                    <p>人老了，然学无止境，纵使上了年纪，我们也是要day day up的。这个华立公司下面的一个老年人大学网站官网，属于企业型网站，功能单一，以框架搭建。</p>
                 </li>
                 <li>
                     <h5>元通轮胎公司官网<span class="duration"><i class="fa fa-calendar color"></i> 2014 - 2015</span></h5>
-                    <h6><span class="fa fa-trophy"></span>walle</h6>
-                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
+                    <h6><span class="fa fa-trophy"></span>walle（旧网名）</h6>
+                    <p>一个卖轮胎的专业化的，加产品展示，公司介绍，历史背景的中小型企业网站</p>
                 </li>
                 <li>
                     <h5>个人账单小系统<span class="duration"><i class="fa fa-calendar color"></i> 2014 - 2015</span></h5>
-                    <h6><span class="fa fa-trophy"></span>walle</h6>
-                    <p>Emi Phasellus congue auctor risuspon, eget males. Pellentes que un imperdiet, odio quis orn sollicitud. Sed vitae lectus elementum mauris.</p>
+                    <h6><span class="fa fa-trophy"></span>walle（旧网名）</h6>
+                    <p>小子第一个商业化应用项目</p>
+                    <p>初入大学期间，由于小子喜欢记一些日常财务支出，零零碎碎的，遂鼓捣了小半年搞了这个账单系统，功能有日常收入支出，还有宿舍费用管理等</p>
+                    <p>体验账户：walle 密码：a654753115</p>
                 </li>
             </ul>
             <!-- /.attributes -->
@@ -481,36 +495,5 @@
         </div>
         <!-- /.resume-left -->
     </div>
-    <div style="clear: both"></div>  
-    <!-- client reference -->
-    <div class="row">
-        <div class="col-md-12">   
-            <div class="reference clearfix"> 
-                <!-- .title_content -->
-                <div class="title_content" style="margin-bottom:5px">
-                    <div class="text_content">Client reference</div>
-                    <div class="clear"></div>
-                </div>
-                <!-- /.title_content -->
-                <ul>
-                    <li class="clearfix">
-                        <img src="http://placehold.it/100x100" class="img_reference" width="100" height="100" alt="">
-                        <p>“Many desktop publishing packages and web page editors now use Lorem Ipsum as their default will model text, and a search for 'lorem ipsum' hope is uncover many web sites still”</p>
-                        <span>John Doe, UX Designer</span>
-                    </li>
-                    <li class="clearfix">
-                        <img src="http://placehold.it/100x100" class="img_reference" width="100" height="100" alt="">
-                        <p>“very nice colleague she always helped me out if i didnt know something editors now use Lorem Ipsum as their default”</p>
-                        <span>Leia Calvi, UX Designer</span>
-                    </li>
-                    <li class="clearfix">
-                        <img src="http://placehold.it/100x100" class="img_reference" width="100" height="100" alt="">
-                        <p>“old colleague and now close friend, she is really sweet and helpfull packages and web page editors now use Lorem Ipsum as their default will model text”</p>
-                        <span>Maria Callas, UX Designer</span>
-                    </li>
-                </ul>
-            </div>
-        </div>
-        <div style="clear: both"></div>   
-    </div>
+    <hr>
 </div>

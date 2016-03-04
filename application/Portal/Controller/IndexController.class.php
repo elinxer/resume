@@ -18,6 +18,9 @@ class IndexController extends HomebaseController {
     	$this->display(":index");
     }
 
+    public function send_email() {
+    	
+    }
 }
 
 

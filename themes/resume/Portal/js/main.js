@@ -85,17 +85,12 @@ jQuery(document).ready(function($) {
     $('.dropdown-select').change(function() {
         animation_style = $('.dropdown-select').val();
     });
-
-
     $('ul.resp-tabs-list li[class^=tabs-]').click(function() {
-
         var tab_name = $(this).attr('data-tab-name');
-
         $('.resp-tabs-container').addClass('animated ' + animation_style);
         $('.resp-tabs-container').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {
             $('.resp-tabs-container').removeClass('animated ' + animation_style);
         });
-
         $(".content_2").mCustomScrollbar("destroy");
         $(".content_2").mCustomScrollbar({
             theme: "dark-2",
@@ -106,10 +101,6 @@ jQuery(document).ready(function($) {
                 autoScrollOnFocus: false
             }
         });
-
-        if (tab_name == "contact")
-            initialize();
-
         return false;
     });
 
@@ -128,7 +119,6 @@ jQuery(document).ready(function($) {
             $(".resp-vtabs .resp-tabs-container").css("height", "100%");
             $(".content_2").css("height", "100%");
         } else {
-
             $(".resp-vtabs .resp-tabs-container").css("height", "580px");
             $(".content_2").css("height", "580px");
             $(".content_2").mCustomScrollbar("destroy");
@@ -141,15 +131,12 @@ jQuery(document).ready(function($) {
                     autoScrollOnFocus: false
                 }
             });
-
         }
-
     }
 
     // On lie l'événement resize à la fonction
     window.addEventListener('load', redimensionnement, false);
     window.addEventListener('resize', redimensionnement, false);
-
     $("#verticalTab h2.resp-accordion").click(function() {
         initialize();
     });
@@ -165,7 +152,7 @@ jQuery(document).ready(function($) {
     $contactform.submit(function() {
         $.ajax({
             type: "POST",
-            url: "php/contact.php",
+            url: "resume/index.php/portal/index/send_email",
             data: $(this).serialize(),
             success: function(msg)
             {
@@ -283,32 +270,6 @@ jQuery(document).ready(function($) {
         horizontal_padding: 5,
         deeplinking: false,
     });
-
-
-
-    /* ---------------------------------------------------------------------- */
-    /* ------------------------------ Google Maps --------------------------- */
-    /* ---------------------------------------------------------------------- */
-
-    var map;
-    function initialize() {
-        map = new GMaps({
-            div: '#map',
-            lat: -37.817917,
-            lng: 144.965065,
-            zoom: 16
-
-        });
-        map.addMarker({
-            lat: -37.81792,
-            lng: 144.96506,
-            title: 'Marker with InfoWindow',
-            icon: 'images/pins-map/map-marker.png',
-            infoWindow: {
-                content: '<p>Melbourne Victoria, 300, Australia</p>'
-            }
-        });
-    }
 
     /* ---------------------------------------------------------------------- */
     /* --------------------------------- Blog ------------------------------- */

@@ -95,12 +95,7 @@ jQuery(document).ready(function($) {
             $('body').css('backgroundImage', $.cookie('layout_bgImage'));
         }
     }
-    // Custumize Color
-    $(".gray").click(function() {
-        $("#colors-style").attr("href", css_url+"css/colors/gray.css");
-        $.cookie('layout_color', '/resume/themes/resume/Portal/css/colors/gray.css');
-        return false;
-    });
+    
     $(".green").click(function() {
         $("#colors-style").attr("href", "/resume/themes/resume/Portal/css/colors/green.css");
         $.cookie('layout_color', '/resume/themes/resume/Portal/css/colors/green.css');
@@ -140,11 +135,6 @@ jQuery(document).ready(function($) {
     $(".lightseagreen").click(function() {
         $("#colors-style").attr("href", "/resume/themes/resume/Portal/css/colors/lightseagreen.css");
         $.cookie('layout_color', '/resume/themes/resume/Portal/css/colors/lightseagreen.css');
-        return false;
-    });
-    $(".darkolivegreen").click(function() {
-        $("#colors-style").attr("href", "/resume/themes/resume/Portal/css/colors/darkolivegreen.css");
-        $.cookie('layout_color', '/resume/themes/resume/Portal/css/colors/darkolivegreen.css');
         return false;
     });
     // Custumizz Style
@@ -266,6 +256,3 @@ jQuery(document).ready(function($) {
         imageOne.setImageDirection();
     }
 </script>
-<!--[if lt IE 9]>
-    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-<![endif]-->

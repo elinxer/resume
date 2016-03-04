@@ -1,242 +1,52 @@
 <div id="portfolio" class="content_2">
+    <?php
+        /*相册*/
+        $pic_posts = sp_sql_posts('cid:3;field:post_title,post_keywords,post_content,smeta,post_date;order:listorder asc');
+        $pic_all_keys = '';
+        foreach($pic_posts as $pv) {
+            $pic_all_keys .= $pv['post_title'].' ';
+        }
+    ?>
     <!-- .title -->
     <h1 class="h-bloc">Portfolio - 这是小二的茶水了</h1>
     <!-- .container-portfolio -->
     <div class="container-portfolio">
         <!-- #filters -->
         <ul id="filters" class="clearfix">
-            <li><span class="filter active" data-filter="catWeb catGraphic catMotion logo">所有</span></li>
-            <li><span class="filter" data-filter="catWeb">作品截图</span></li>
-            <li><span class="filter" data-filter="catGraphic">私密照</span></li>
-            <li><span class="filter" data-filter="catMotion">Motion Graphic</span></li>
-            <li><span class="filter" data-filter="logo">Logo</span></li>
+            <li><span class="filter active" data-filter="{$pic_all_keys}">所有</span></li>
+            <volist name="pic_posts" id="pic_vo">
+
+                <li><span class="filter" data-filter="{$pic_vo['post_title']}">{$pic_vo['post_title']}</span></li>
+            </volist>
         </ul>
         <!-- /#filters -->
         <!-- #portfoliolist -->
         <div id="portfoliolist">
             <!-- .portfolio -->
-            <div class="portfolio logo" data-cat="logo">	
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">		
-                    <a href="__TMPL__Portal/images/portfolio/1.jpg" rel="portfolio" title="Lorem ipsum dolor sit amet, consectetur adipiscing Vivamus sit amet ligula non lectus.consectetur adipiscingVivamus sit amet">
-                        <img src="__TMPL__Portal/images/portfolio/1.jpg" alt="Visual Infography" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Logo</span>
-                            </div>
-                            <div class="label-bg"></div>
+            <volist name="pic_posts" id="pic_smeta">
+                <?php
+                    $tmp_smeta=json_decode($pic_smeta['smeta'],true); /*smeta处理方法，将其转化为数组*/ 
+                    $pi_smeta = $tmp_smeta['photo'];
+                ?>
+                <volist name="pi_smeta" id="pi_smeta_vo">
+                    <div class="portfolio {$pic_smeta['post_title']}" data-cat="{$pic_smeta['post_title']}">	
+                        <!-- .portfolio-wrapper -->
+                        <div class="portfolio-wrapper">		
+                            <a href="__UPLOAD__{$pi_smeta_vo['url']}" rel="portfolio" title="{$pi_smeta_vo['alt']} {$pic_smeta['post_date']}">
+                                <img src="__UPLOAD__{$pi_smeta_vo['url']}" alt="{$pi_smeta_vo['alt']}" />
+                                <div class="label">
+                                    <div class="label-text">
+                                        <a class="text-title">{$pi_smeta_vo['alt']}</a>
+                                        <span class="text-category">{$pic_smeta['post_date']}</span>
+                                    </div>
+                                    <div class="label-bg"></div>
+                                </div>
+                            </a>
                         </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>		
-            <!-- /.portfolio -->
-            <!-- .portfolio -->
-            <div class="portfolio catWeb" data-cat="catWeb">	
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">		
-                    <a href="http://www.youtube.com/watch?v=c9MnSeYYtYY" rel="portfolio">
-                        <img src="__TMPL__Portal/images/portfolio/2.jpg" alt="Visual Infography" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Web Design</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>		
-            <!-- /.portfolio -->
-
-            <!-- .portfolio -->
-            <div class="portfolio catWeb" data-cat="catWeb">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">			
-                    <a href="__TMPL__Portal/images/portfolio/3.jpg" rel="portfolio">
-                        <img src="__TMPL__Portal/images/portfolio/3.jpg" alt="Sonor's Design" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Web design</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>				
-            <!-- /.portfolio -->
-
-            <!-- .portfolio -->
-            <div class="portfolio catMotion" data-cat="catMotion">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">			
-                    <a href="__TMPL__Portal/images/portfolio/4.jpg" rel="portfolio">
-                        <img src="__TMPL__Portal/images/portfolio/4.jpg" alt="Typography Company" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Motion Graphic</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>	
-            <!-- /.portfolio -->
-
-            <!-- .portfolio -->
-            <div class="portfolio catWeb" data-cat="catWeb">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">
-                    <a href="__TMPL__Portal/images/portfolio/5.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">
-                        <img src="__TMPL__Portal/images/portfolio/5.jpg" alt="Weatherette" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Web Design</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>	
-            <!-- /.portfolio -->
-
-            <!-- .portfolio -->
-            <div class="portfolio catMotion" data-cat="catMotion">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">		
-                    <a href="__TMPL__Portal/images/portfolio/6.jpg" rel="portfolio">				
-                        <img src="__TMPL__Portal/images/portfolio/6.jpg" alt="BMF" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Motion Graphic</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>	
-            <!-- /.portfolio -->
-            <!-- .portfolio -->
-            <div class="portfolio catGraphic" data-cat="catGraphic">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">		
-                    <a href="__TMPL__Portal/images/portfolio/7.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">				
-                        <img src="__TMPL__Portal/images/portfolio/7.jpg" alt="Techlion" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Graphic Design</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>
-            <!-- /.portfolio -->
-
-            <!-- .portfolio -->
-            <div class="portfolio logo" data-cat="logo">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">		
-                    <a href="__TMPL__Portal/images/portfolio/8.jpg" rel="portfolio" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien.">
-                        <img src="__TMPL__Portal/images/portfolio/8.jpg" alt="KittyPic" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Logo</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>	
-            <!-- /.portfolio -->
-
-            <!-- .portfolio -->
-            <div class="portfolio catWeb" data-cat="catWeb">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">			
-                    <a href="__TMPL__Portal/images/portfolio/9.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">
-                        <img src="__TMPL__Portal/images/portfolio/9.jpg" alt="Graph Plotting" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Web Design</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>	
-            <!-- /.portfolio -->
-
-            <!-- .portfolio -->
-            <div class="portfolio catGraphic" data-cat="catGraphic">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">	
-                    <a href="__TMPL__Portal/images/portfolio/10.jpg" rel="portfolio">
-                        <img src="__TMPL__Portal/images/portfolio/10.jpg" alt="QR Quick Response" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Graphic Design</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>	
-            <!-- /.portfolio -->
-
-            <!-- .portfolio -->
-            <div class="portfolio logo" data-cat="logo">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">	
-                    <a href="__TMPL__Portal/images/portfolio/11.jpg" title="Etiam quis mi eu elit tempor facilisis id et neque. Nulla sit amet sem sapien." rel="portfolio">
-                        <img src="__TMPL__Portal/images/portfolio/11.jpg" alt="Mobi Sock" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Logo</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>	
-            <!-- /.portfolio -->
-            <!-- .portfolio -->
-            <div class="portfolio logo" data-cat="logo">
-                <!-- .portfolio-wrapper -->
-                <div class="portfolio-wrapper">
-                    <a href="__TMPL__Portal/images/portfolio/12.jpg" rel="portfolio">
-                        <img src="__TMPL__Portal/images/portfolio/12.jpg" alt="Village Community Church" />
-                        <div class="label">
-                            <div class="label-text">
-                                <a class="text-title">Project Name</a>
-                                <span class="text-category">Logo</span>
-                            </div>
-                            <div class="label-bg"></div>
-                        </div>
-                    </a>
-                </div>
-                <!-- /.portfolio-wrapper -->
-            </div>	
+                        <!-- /.portfolio-wrapper -->
+                    </div>
+                </volist>
+            </volist>	
             <!-- /.portfolio -->
             <div class="clear"></div>
         </div>
