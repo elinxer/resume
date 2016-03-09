@@ -198,32 +198,32 @@
                                 <!-- resp-tabs-list -->
                                 <ul class="resp-tabs-list">
     <li class="tabs-profile hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a profile" data-tab-name="profile">			
-        <span class="tite-list">profile</span>
+        <span class="tite-list">个人信息</span>
         <i class="fa fa-user icon_menu icon_menu_active"></i>
     </li>
 
     <li class="tabs-resume hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="resume"> 
-        <span class="tite-list">resume</span>
+        <span class="tite-list">个人简历</span>
         <i class="fa fa-tasks icon_menu"></i>
     </li>
 
     <li class="tabs-portfolio hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="portfolio"> 
-        <span class="tite-list">portfolio</span>
+        <span class="tite-list">个人作品</span>
         <i class="fa fa-briefcase icon_menu"></i>
     </li>
 
     <li class="tabs-blog hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="blog">
-        <span class="tite-list">blog</span>
+        <span class="tite-list">闲情语句</span>
         <i class="fa fa-bullhorn icon_menu"></i>
     </li>
 
     <li class="tabs-contact hi-icon-wrap hi-icon-effect-5 hi-icon-effect-5a" data-tab-name="contact" style="margin-bottom: 48px !important;"> 
-        <span class="tite-list">contact</span>
+        <span class="tite-list">打我啊</span>
         <i class="fa fa-envelope icon_menu"></i> 
     </li>
 
     <a href="#" id="print"><i class="fa fa-print icon_print"></i> </a>
-    <a href="#" id="downlowd"><i class="fa fa-download icon_print"></i> </a>
+    <a href="/resume/data/upload//files/个人简历2016-03-08.docx" id="downlowd" target="_blank"><i class="fa fa-download icon_print"></i> </a>
 </ul>
                                 <!-- /resp-tabs-list -->
                                 
@@ -1164,7 +1164,6 @@ window.console = window.console || (function() {
     return c;
 })();
 jQuery(document).ready(function($) {
-    var css_url = '/resume/themes/resume/Portal/';
     // layout Type              
     if ($.cookie('bg_type') != null) {
         if ($.cookie('bg_type') == 'bg_color'){

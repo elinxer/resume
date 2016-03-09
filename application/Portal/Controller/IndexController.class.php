@@ -19,7 +19,8 @@ class IndexController extends HomebaseController {
     }
 
     public function send_email() {
-    	
+    	echo '-1';
+    	// echo 'success';
     }
 }
 
