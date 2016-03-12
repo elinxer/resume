@@ -11,7 +11,7 @@
   'MOBILE_TPL_ENABLED' => 0,
   'HTML_CACHE_ON' => false,
   'SP_MAIL_ADDRESS' => '654753115@qq.com',
-  'SP_MAIL_SENDER' => '来源简历',
+  'SP_MAIL_SENDER' => 'buy_R',
   'SP_MAIL_SMTP' => 'smtp.qq.com',
   'SP_MAIL_SMTP_PORT' => '25',
   'SP_MAIL_LOGINNAME' => '654753115@qq.com',

@@ -161,7 +161,7 @@ jQuery(document).ready(function($) {
                 if (msg_error.indexOf('error-message') != -1) {
                     $("#contact-message").addClass("has-error");
                     $("#contact-message").removeClass("has-success");
-                    output_error = 'Please enter your message.';
+                    output_error = '内容，内容，内容。重要的事情说三遍！';
                 } else {
                     $("#contact-message").addClass("has-success");
                     $("#contact-message").removeClass("has-error");
@@ -170,7 +170,7 @@ jQuery(document).ready(function($) {
 
                     $("#contact-email").addClass("has-error");
                     $("#contact-email").removeClass("has-success");
-                    output_error = 'Please enter valid e-mail.';
+                    output_error = '差联系方式美女';
                 } else {
                     $("#contact-email").addClass("has-success");
                     $("#contact-email").removeClass("has-error");
@@ -178,7 +178,7 @@ jQuery(document).ready(function($) {
                 if (msg_error.indexOf('error-name') != -1) {
                     $("#contact-name").addClass("has-error");
                     $("#contact-name").removeClass("has-success");
-                    output_error = 'Please enter your name.';
+                    output_error = '你叫啥呢？';
                 } else {
                     $("#contact-name").addClass("has-success");
                     $("#contact-name").removeClass("has-error");
